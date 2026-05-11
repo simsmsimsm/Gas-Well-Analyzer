@@ -163,9 +163,9 @@ def upload():
     f = request.files["file"]
     try:
         df = pd.read_csv(f)
-        for col in df.select_dtypes("object").columns:
+        for col in df.select_dtypes(include=["object", "str"]).columns:
             try:
-                parsed = pd.to_datetime(df[col], infer_datetime_format=True)
+                parsed = pd.to_datetime(df[col])
                 df[col] = parsed
             except Exception:
                 pass
