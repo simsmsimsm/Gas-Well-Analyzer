@@ -1,0 +1,46 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 137-308-062
+127.0.0.1 - - [10/May/2026 20:01:42] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:02:12] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:02:30] "POST /api/scatter HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:02:38] "POST /api/temp-overview HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:02:49] "GET /api/matrix HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:02:57] "POST /api/timeseries HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:03:10] "GET /api/summary HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:03:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:03:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:03:54] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:03:54] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:03:55] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [10/May/2026 20:04:55] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:04:55] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:04:59] "POST /api/scatter HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:07] "POST /api/temp-overview HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:07] "POST /api/temp-overview HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:17] "GET /api/matrix HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:24] "GET /api/summary HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:43] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:44] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:05:46] "POST /api/scatter HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:04] "POST /api/temp-overview HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:05] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:05] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:07] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:07] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:07] "POST /api/temp-overview HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:43] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:43] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:47] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:47] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:48] "POST /api/scatter HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:58] "POST /api/timeseries HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:59] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:06:59] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:07:00] "GET /api/sample HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:07:00] "GET /api/info HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:07:01] "POST /api/timeseries HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2026 20:07:04] "POST /api/timeseries HTTP/1.1" 200 -

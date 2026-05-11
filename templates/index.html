@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gas Well Correlation Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <!-- Plotly.js — client-side charting, no server-side dep needed -->
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Sidebar ─────────────────────────────────────────────────────── -->
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <h1>⛽ Gas Well Analyzer</h1>
+      <p>Temperature &amp; Liquids Correlation</p>
+    </div>
+
+    <!-- Data section -->
+    <div class="sidebar-section">
+      <h3>Data</h3>
+      <div id="data-status">No data loaded</div>
+      <label class="upload-label">
+        Upload CSV
+        <input type="file" id="file-input" accept=".csv" />
+      </label>
+      <button class="btn btn-primary" onclick="loadSample()">Load Sample Well Data</button>
+    </div>
+
+    <!-- Date range filter (shown only when date column detected) -->
+    <div class="sidebar-section" id="date-filter-wrap" style="display:none">
+      <h3>Date Range</h3>
+      <div class="form-group">
+        <label>From</label>
+        <input type="date" id="date-from" class="date-input" />
+      </div>
+      <div class="form-group">
+        <label>To</label>
+        <input type="date" id="date-to" class="date-input" />
+      </div>
+      <button class="btn btn-secondary" onclick="resetDateRange()">Reset Range</button>
+    </div>
+
+    <!-- Dynamic tab controls -->
+    <div class="sidebar-section" id="tab-controls-wrap">
+      <h3 id="controls-heading">Controls</h3>
+      <div id="tab-controls"></div>
+    </div>
+
+    <button class="btn btn-analyze" id="analyze-btn" onclick="analyze()" disabled>
+      Analyze
+    </button>
+  </aside>
+
+  <!-- ── Main ────────────────────────────────────────────────────────── -->
+  <div id="main">
+
+    <!-- Tab bar -->
+    <nav id="tab-bar">
+      <button class="tab-btn active" data-tab="scatter">Scatter</button>
+      <button class="tab-btn" data-tab="overview">Temp Overview</button>
+      <button class="tab-btn" data-tab="matrix">Correlation Matrix</button>
+      <button class="tab-btn" data-tab="timeseries">Time Series</button>
+      <button class="tab-btn" data-tab="summary">Summary</button>
+    </nav>
+
+    <!-- Content -->
+    <div id="content-area">
+
+      <!-- Chart card -->
+      <div id="chart-card">
+        <div id="chart-title-bar">
+          <span id="chart-title-text">Gas Well Analytics</span>
+        </div>
+        <div id="chart"></div>
+      </div>
+
+      <!-- Stats panel (shown for scatter only) -->
+      <div id="stats-panel">
+        <div id="stats-grid"></div>
+        <div class="eq-line" id="eq-display" style="display:none"></div>
+        <div id="interpretation"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
