@@ -1,0 +1,25 @@
+{
+  "name": "gas-well-analyzer",
+  "version": "1.0.0",
+  "description": "A browser-based analytics tool for exploring correlations between temperature, pressure, production rates, and gas composition in well data. Built with Flask and Plotly.js — no database, no build step.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests/esc.test.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:33441/git/simsmsimsm/Gas-Well-Analyzer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
